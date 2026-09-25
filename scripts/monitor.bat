@@ -12,7 +12,7 @@ echo    ************************************
 echo    *                                  *
 echo    *      Powered by Kolah Sefid      *
 echo    *                                  *
-echo    *      Site: kolah-sefid.ir       *
+echo    *      Site: kolah-sefid.ir        * 
 echo    *                                  *
 echo    ************************************
 echo.
@@ -65,9 +65,9 @@ if %LINE_COUNT% geq 50 (
     echo.
     echo    ************************************
     echo    *                                  *
-    echo    *      Powered by Hamid Shool      *
+    echo    *      Powered by Kolah Sefid      *
     echo    *                                  *
-    echo    *      Telegram: @HamidShool       *
+    echo    *      Site: kolah-sefid.ir        * 
     echo    *                                  *
     echo    ************************************
     echo.
