@@ -1,37 +1,35 @@
-# v2ray Client
-
-کلاینت v2ray برای ویندوز با پشتیبانی از Xray-core
-
-## ✨ ویژگی‌ها
-
-- ✅ پشتیبانی از ویندوز ۶۴ و ۳۲ بیتی
-- ✅ اتصال/قطع با یک دابل‌کلیک
-- ✅ پشتیبانی از VLESS, VMess, Trojan, REALITY
-- ✅ نمایش وضعیت لحظه‌ای اتصال
-- ✅ غیرفعال‌سازی خودکار پروکسی
-- ✅ بدون نیاز به v2rayN
-
 ## 📦 نصب
 
-1. فایل `setup.bat` را با **Run as Administrator** اجرا کنید
-2. فایل `config.txt` را با لینک `vless://` خود پر کنید
-3. روی `Connect v2ray` روی دسکتاپ دابل‌کلیک کنید
+### قدم ۱: دانلود Xray-core
 
-## 🔧 Xray Core
-
-این پروژه نیاز به Xray-core دارد. از لینک زیر دانلود کنید:
+از لینک زیر Xray-core رو دانلود کنید:
 
 https://github.com/XTLS/Xray-core/releases
 
 - `Xray-windows-64.zip` برای ویندوز ۶۴ بیتی
 - `Xray-windows-32.zip` برای ویندوز ۳۲ بیتی
 
-فایل‌های `xray.exe`, `wintun.dll`, `geoip.dat`, `geosite.dat` را در پوشه‌ی `core-64/` یا `core-32/` قرار دهید.
+### قدم ۲: کپی فایل‌ها
 
-## 📞 پشتیبانی
+بعد از Extract:
 
-- Telegram: [@HamidShool](https://t.me/HamidShool)
+- فایل‌های `xray.exe`, `wintun.dll`, `geoip.dat`, `geosite.dat` 
+  از `Xray-windows-64.zip` → پوشه‌ی `core-64/`
+- فایل‌های `xray.exe`, `wintun.dll`, `geoip.dat`, `geosite.dat` 
+  از `Xray-windows-32.zip` → پوشه‌ی `core-32/`
 
----
+### قدم ۳: نصب
 
-**Powered by Hamid Shool**
+1. روی `setup.bat` راست‌کلیک کنید
+2. گزینه‌ی **Run as Administrator** را انتخاب کنید
+3. صبر کنید تا پیام موفقیت نمایش داده شود
+
+### قدم ۴: تنظیم لینک
+
+1. فایل `config.txt` را باز کنید
+2. فقط یک لینک `vless://` را داخل آن پیست کنید
+3. ذخیره کنید (Ctrl + S)
+
+### قدم ۵: اتصال
+
+روی **Connect v2ray** روی دسکتاپ دابل‌کلیک کنید
