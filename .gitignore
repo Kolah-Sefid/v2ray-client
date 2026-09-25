@@ -1,0 +1,13 @@
+# Xray core files (too large)
+core-64/
+core-32/
+
+# Temporary files
+config/config.json
+scripts/watchdog.lock
+scripts/watchdog.log
+
+# System files
+Thumbs.db
+Desktop.ini
+*.tmpscripts/xray.log

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>راهنمای استفاده - v2ray Client</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+        direction: rtl;
+        text-align: right;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding: 40px 20px;
+        line-height: 1.8;
+        color: #2c3e50;
+    }
+    
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        overflow: hidden;
+    }
+    
+    .header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 40px 30px;
+        text-align: center;
+        position: relative;
+    }
+    
+    .header-content {
+        position: relative;
+        z-index: 1;
+    }
+    
+    .header h1 {
+        font-size: 2.2em;
+        margin-bottom: 10px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+    
+    .header .subtitle {
+        font-size: 1.1em;
+        opacity: 0.9;
+        font-weight: 300;
+    }
+    
+    .header .logo {
+        font-size: 3em;
+        margin-bottom: 15px;
+    }
+    
+    .content {
+        padding: 40px 35px;
+    }
+    
+    .card {
+        background: #ffffff;
+        border: 1px solid #e8ecf1;
+        border-radius: 15px;
+        padding: 25px;
+        margin-bottom: 20px;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 5px;
+        height: 100%;
+        background: linear-gradient(180deg, #667eea, #764ba2);
+    }
+    
+    .card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(102, 126, 234, 0.15);
+        border-color: #667eea;
+    }
+    
+    .card-title {
+        font-size: 1.3em;
+        color: #2c3e50;
+        margin-bottom: 15px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .card-title .icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+        border-radius: 10px;
+        font-size: 1.2em;
+        flex-shrink: 0;
+    }
+    
+    .steps {
+        list-style: none;
+        padding: 0;
+        counter-reset: step-counter;
+    }
+    
+    .steps li {
+        counter-increment: step-counter;
+        padding: 12px 15px;
+        margin-bottom: 10px;
+        background: #f8f9fc;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        transition: all 0.2s ease;
+    }
+    
+    .steps li:hover {
+        background: #eef2ff;
+        transform: translateX(-5px);
+    }
+    
+    .steps li::before {
+        content: counter(step-counter);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 30px;
+        height: 30px;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+        border-radius: 50%;
+        font-weight: 700;
+        font-size: 0.9em;
+        flex-shrink: 0;
+    }
+    
+    code {
+        background: #2c3e50;
+        color: #50fa7b;
+        padding: 3px 10px;
+        border-radius: 6px;
+        font-family: 'Consolas', 'Courier New', monospace;
+        font-size: 0.9em;
+        direction: ltr;
+        display: inline-block;
+        font-weight: 600;
+    }
+    
+    .highlight {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+        padding: 4px 12px;
+        border-radius: 8px;
+        font-weight: 700;
+        display: inline-block;
+    }
+    
+    .warning-card {
+        background: linear-gradient(135deg, #fff3cd 0%, #ffe8a1 100%);
+        border: 2px solid #ffc107;
+        border-radius: 15px;
+        padding: 25px;
+        margin-top: 25px;
+        position: relative;
+    }
+    
+    .warning-card::before {
+        content: '⚠️';
+        position: absolute;
+        top: -20px;
+        right: 25px;
+        font-size: 2.5em;
+        background: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4);
+    }
+    
+    .warning-card .card-title {
+        color: #856404;
+        margin-top: 10px;
+    }
+    
+    .warning-card ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .warning-card ul li {
+        padding: 10px 0;
+        padding-right: 30px;
+        position: relative;
+        border-bottom: 1px solid rgba(133, 100, 4, 0.1);
+    }
+    
+    .warning-card ul li:last-child {
+        border-bottom: none;
+    }
+    
+    .warning-card ul li::before {
+        content: '✦';
+        position: absolute;
+        right: 0;
+        color: #856404;
+        font-weight: 700;
+    }
+    
+    .footer {
+        background: #2c3e50;
+        color: white;
+        padding: 30px;
+        text-align: center;
+    }
+    
+    .footer .brand {
+        font-size: 1.4em;
+        font-weight: 700;
+        margin-bottom: 8px;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    
+    .footer .telegram {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: linear-gradient(135deg, #0088cc, #00a8e8);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 600;
+        margin-top: 10px;
+        transition: all 0.3s ease;
+    }
+    
+    .footer .telegram:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 20px rgba(0, 136, 204, 0.5);
+    }
+    
+    .tip {
+        display: inline-block;
+        background: #e3f2fd;
+        color: #1565c0;
+        padding: 2px 8px;
+        border-radius: 5px;
+        font-size: 0.85em;
+        font-weight: 600;
+        margin-right: 5px;
+    }
+    
+    .config-box {
+        background: #2c3e50;
+        color: #f8f8f2;
+        padding: 20px;
+        border-radius: 10px;
+        font-family: 'Consolas', 'Courier New', monospace;
+        direction: ltr;
+        text-align: left;
+        margin: 15px 0;
+        font-size: 0.9em;
+        line-height: 1.6;
+        overflow-x: auto;
+    }
+    
+    .config-box .comment {
+        color: #6272a4;
+    }
+    
+    .config-box .link {
+        color: #50fa7b;
+        word-break: break-all;
+    }
+    
+    @media (max-width: 600px) {
+        .content { padding: 25px 20px; }
+        .header h1 { font-size: 1.6em; }
+        .header .logo { font-size: 2.2em; }
+        .card { padding: 20px 18px; }
+        .steps li { padding: 10px; font-size: 0.95em; }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    
+    <div class="header">
+        <div class="header-content">
+            <div class="logo">🚀</div>
+            <h1>راهنمای استفاده</h1>
+            <div class="subtitle">v2ray Client - نسخه‌ی حرفه‌ای</div>
+        </div>
+    </div>
+    
+    <div class="content">
+        
+        <div class="card">
+            <div class="card-title">
+                <span class="icon">⚙️</span>
+                نصب اولیه (فقط یک بار)
+            </div>
+            <ol class="steps">
+                <li>روی فایل <code>setup.bat</code> راست‌کلیک کنید</li>
+                <li>گزینه‌ی <span class="highlight">Run as Administrator</span> را انتخاب کنید</li>
+                <li>صبر کنید تا پنجره خودکار بسته شود</li>
+            </ol>
+        </div>
+        
+        <div class="card">
+            <div class="card-title">
+                <span class="icon">📝</span>
+                تنظیم لینک اتصال
+            </div>
+            <p style="margin-bottom: 15px;">
+                فایل <code>config.txt</code> به‌صورت <b>خالی</b> در پوشه قرار دارد. 
+                باید لینک اتصال خود را داخل آن قرار دهید:
+            </p>
+            <ol class="steps">
+                <li>فایل <code>config.txt</code> را باز کنید (با Notepad)</li>
+                <li>فقط <b>یک لینک</b> <code>vless://</code> را داخل آن پیست کنید</li>
+                <li>فایل را ذخیره کنید <span class="tip">Ctrl + S</span></li>
+                <li>فایل را ببندید</li>
+            </ol>
+            <div class="config-box">
+                <span class="comment"># نمونه‌ی محتوای config.txt:</span><br>
+                <span class="link">vless://c8c21cde-1976-46ca-a5fb-...</span>
+            </div>
+            <p style="color: #e74c3c; font-weight: 600; margin-top: 10px;">
+                ⚠️ فقط یک لینک! نه چند تا.
+            </p>
+        </div>
+        
+        <div class="card">
+            <div class="card-title">
+                <span class="icon">🟢</span>
+                برای اتصال
+            </div>
+            <p style="font-size: 1.1em;">
+                روی <span class="highlight">Connect v2ray</span> روی دسکتاپ دابل‌کلیک کنید
+            </p>
+        </div>
+        
+        <div class="card">
+            <div class="card-title">
+                <span class="icon">🔴</span>
+                برای قطع اتصال
+            </div>
+            <p style="font-size: 1.1em;">
+                روی <span class="highlight">Disconnect v2ray</span> روی دسکتاپ دابل‌کلیک کنید
+            </p>
+        </div>
+        
+        <div class="card">
+            <div class="card-title">
+                <span class="icon">🔄</span>
+                اگر کانفیگ کار نکرد
+            </div>
+            <ol class="steps">
+                <li>یک لینک <code>vless://</code> جدید از سرویس‌دهنده بگیرید</li>
+                <li>فایل <code>config.txt</code> را باز کنید</li>
+                <li>لینک قبلی را پاک کنید
+</li>
+                <li>لینک جدید را پیست کنید</li>
+                <li>ذخیره کنید</li>
+                <li>دوباره <b>Connect v2ray</b> را بزنید</li>
+            </ol>
+        </div>
+        
+        <div class="warning-card">
+            <div class="card-title">
+                نکات مهم
+            </div>
+            <ul>
+                <li>این پوشه را در مسیر با حروف فارسی قرار ندهید</li>
+                <li>پوشه‌های <code>core-64</code>، <code>core-32</code>، <code>config</code> و <code>scripts</code> را حذف یا جابه‌جا نکنید</li>
+                <li>اگر آنتی‌ویروس غیر از Windows Defender دارید، این پوشه را در لیست سفید آن اضافه کنید</li>
+                <li>پس از اتصال، همه‌ی مرورگرها از پروکسی استفاده می‌کنند</li>
+                <li>برای قطع، حتماً از <b>Disconnect v2ray</b> استفاده کنید</li>
+                <li>فایل <code>config.txt</code> باید همیشه فقط <b>یک لینک</b> داشته باشد</li>
+            </ul>
+        </div>
+        
+    </div>
+    
+    <div class="footer">
+        <div class="brand">Powered by Hamid Shool</div>
+
+    </div>
+    
+</div>
+
+</body>
+</html>

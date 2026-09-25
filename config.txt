@@ -1,0 +1,1 @@
+vless://c8c21cde-1976-46ca-a5fb-fc84eda9f5cf@xn--1dee-ow4bt2570a.netbazshop.ir:33017?encryption=mlkem768x25519plus.native.0rtt.YoqVHL7fCzI4qbWSy3TN6inQG32vJD01ZGgUKvLoQFY&security=none&type=tcp&headerType=http&path=%2F&host=dynu.com#%F0%9F%87%A9%F0%9F%87%AA%F0%9D%97%9A%F0%9D%97%B2%F0%9D%97%BF%F0%9D%97%BA%F0%9D%97%AE%F0%9D%97%BB%F0%9D%98%863%28MCI%29
