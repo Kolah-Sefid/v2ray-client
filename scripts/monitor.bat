@@ -10,9 +10,9 @@ echo ========================================
 echo.
 echo    ************************************
 echo    *                                  *
-echo    *      Powered by Hamid Shool      *
+echo    *      Powered by Kolah Sefid      *
 echo    *                                  *
-echo    *      Telegram: @HamidShool       *
+echo    *      Site: kolah-sefid.ir       *
 echo    *                                  *
 echo    ************************************
 echo.
