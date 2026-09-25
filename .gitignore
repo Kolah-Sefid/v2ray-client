@@ -6,8 +6,9 @@ core-32/
 config/config.json
 scripts/watchdog.lock
 scripts/watchdog.log
+scripts/xray.log
 
 # System files
 Thumbs.db
 Desktop.ini
-*.tmpscripts/xray.log
+*.tmp
