@@ -12,7 +12,7 @@
 
 **پکیج کامل آماده (شامل Xray-core):**
 
-🔗 **[http://dl.nextup1.ir/soft/v2ray.zip](http://dl.nextup1.ir/soft/v2ray.zip)**
+🔗 **[https://dl.nextup1.ir/soft/v2ray.zip](https://dl.nextup1.ir/soft/v2ray.zip)**
 
 > این پکیج شامل تمام فایل‌های لازم است. کافیه Extract کنید و `setup.bat` را اجرا کنید.
 
@@ -36,7 +36,7 @@
 
 ### روش ۱: دانلود پکیج کامل (توصیه‌شده)
 
-1. فایل **[v2ray.zip](http://dl.nextup1.ir/soft/v2ray.zip)** را دانلود کنید
+1. فایل **[v2ray.zip](https://dl.nextup1.ir/soft/v2ray.zip)** را دانلود کنید
 2. فایل ZIP را **Extract** کنید
 3. روی **`setup.bat`** راست‌کلیک کنید → **Run as Administrator**
 4. فایل **`config.txt`** را باز کنید و لینک `vless://` خود را داخل آن پیست کنید
