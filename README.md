@@ -129,7 +129,7 @@ v2ray-client/
 ├── config.txt                  ← لینک vless://
 ├── setup.bat                   ← نصب اولیه
 ├── README.md                   ← همین فایل
-└── README.html                 ← راهنمای شیک
+└── README.html                 ← راهنما
 ```
 
 ---
