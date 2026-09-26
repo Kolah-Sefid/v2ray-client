@@ -129,7 +129,7 @@ v2ray-client/
 ├── config.txt                  ← لینک vless://
 ├── setup.bat                   ← نصب اولیه
 ├── README.md                   ← همین فایل
-└── README.html                 ← راهنما
+└── README.html                 ← راهنمای شیک
 ```
 
 ---
@@ -153,16 +153,16 @@ v2ray-client/
 
 ---
 
-## 🤝 مشارکت
+## 🌐 وب‌سایت
 
-اگر ایده یا پیشنهادی دارید، خوشحال می‌شوم بشنوم:
-- **Telegram:** [@HamidShool](https://t.me/HamidShool)
+- **وب‌سایت:** [kolah-sefid.ir](https://kolah-sefid.ir)
+- **گیت‌هاب:** [Kolah-Sefid](https://github.com/Kolah-Sefid)
 
 ---
 
 ## 📞 پشتیبانی
 
-- **Telegram:** [@HamidShool](https://t.me/HamidShool)
+- **وب‌سایت:** [kolah-sefid.ir](https://kolah-sefid.ir)
 
 ---
 
@@ -174,8 +174,9 @@ v2ray-client/
 
 <div align="center">
 
-**Powered by Hamid Shool**
+**Powered by Kolah Sefid**
 
-[![Telegram](https://img.shields.io/badge/Telegram-@HamidShool-blue?logo=telegram)](https://t.me/HamidShool)
+[![Website](https://img.shields.io/badge/Website-kolah--sefid.ir-blue)](https://kolah-sefid.ir)
+[![GitHub](https://img.shields.io/badge/GitHub-Kolah--Sefid-black?logo=github)](https://github.com/Kolah-Sefid)
 
 </div>
