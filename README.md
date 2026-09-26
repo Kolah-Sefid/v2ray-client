@@ -13,7 +13,7 @@
 
 **نصب‌کننده‌ی حرفه‌ای:**
 
-🔗 **[http://dl.nextup1.ir/soft/v2ray-Setup.exe](http://dl.nextup1.ir/soft/v2ray-Setup.exe)**
+🔗 **[https://dl.nextup1.ir/soft/v2ray-Setup.exe](https://dl.nextup1.ir/soft/v2ray-Setup.exe)**
 
 > فقط دانلود کنید، دابل‌کلیک کنید و نصب کنید. تمام.
 
@@ -37,7 +37,7 @@
 
 ## 📦 نصب
 
-1. فایل **[v2ray-Setup.exe](http://dl.nextup1.ir/soft/v2ray-Setup.exe)** را دانلود کنید
+1. فایل **[v2ray-Setup.exe](https://dl.nextup1.ir/soft/v2ray-Setup.exe)** را دانلود کنید
 2. روی فایل **دابل‌کلیک** کنید
 3. **UAC** می‌آید → **Yes** را بزنید
 4. صبر کنید تا نصب کامل شود
