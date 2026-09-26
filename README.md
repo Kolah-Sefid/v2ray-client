@@ -9,19 +9,13 @@
 
 ---
 
-## 📥 دانلود سریع
+## 📥 دانلود
 
-**نصب‌کننده‌ی حرفه‌ای (توصیه‌شده):**
+**نصب‌کننده‌ی حرفه‌ای:**
 
 🔗 **[http://dl.nextup1.ir/soft/v2ray-Setup.exe](http://dl.nextup1.ir/soft/v2ray-Setup.exe)**
 
 > فقط دانلود کنید، دابل‌کلیک کنید و نصب کنید. تمام.
-
-**یا پکیج Portable:**
-
-🔗 **[http://dl.nextup1.ir/soft/v2ray.zip](http://dl.nextup1.ir/soft/v2ray.zip)**
-
-> فایل ZIP را Extract کنید و `setup.bat` را اجرا کنید.
 
 ---
 
@@ -43,8 +37,6 @@
 
 ## 📦 نصب
 
-### روش ۱: نصب‌کننده (توصیه‌شده)
-
 1. فایل **[v2ray-Setup.exe](http://dl.nextup1.ir/soft/v2ray-Setup.exe)** را دانلود کنید
 2. روی فایل **دابل‌کلیک** کنید
 3. **UAC** می‌آید → **Yes** را بزنید
@@ -53,13 +45,6 @@
    - 🟢 **Connect v2ray**
    - 🔴 **Disconnect v2ray**
    - ⚙️ **Config v2ray**
-
-### روش ۲: پکیج Portable
-
-1. فایل **[v2ray.zip](http://dl.nextup1.ir/soft/v2ray.zip)** را دانلود کنید
-2. فایل ZIP را **Extract** کنید
-3. روی **`setup.bat`** راست‌کلیک کنید → **Run as Administrator**
-4. Shortcutها روی دسکتاپ ساخته می‌شوند
 
 ---
 
@@ -133,7 +118,7 @@ v2ray-client/
 │   └── config-editor.bat       ← اجراگر
 │
 ├── config.txt                  ← لینک vless://
-├── setup.bat                   ← نصب اولیه (Portable)
+├── setup.bat                   ← نصب اولیه
 ├── README.md                   ← همین فایل
 └── README.html                 ← راهنمای شیک
 ```
