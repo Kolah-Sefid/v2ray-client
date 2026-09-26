@@ -88,47 +88,9 @@
 
 ---
 
-## 📁 محل ذخیره‌ی کانفیگ
-
-فایل کانفیگ در این مسیر ذخیره می‌شود:
-
-```
-C:\Users\YourName\AppData\Roaming\v2ray Client\config.txt
-```
-
-> نیازی نیست دستی به این مسیر بروید. فقط از Shortcut **Config v2ray** استفاده کنید.
-
----
-
-## 📁 ساختار پروژه
-
-```
-v2ray-client/
-│
-├── core-64/                    ← فایل‌های Xray (64-bit)
-├── core-32/                    ← فایل‌های Xray (32-bit)
-├── config/
-│   └── make_config.ps1         ← تبدیل vless:// به JSON
-├── scripts/
-│   ├── connect.bat             ← اتصال
-│   ├── disconnect.bat          ← قطع
-│   ├── monitor.bat             ← نمایش وضعیت
-│   ├── watchdog.ps1            ← غیرفعال‌سازی خودکار
-│   ├── config-editor.ps1       ← رابط کاربری
-│   └── config-editor.bat       ← اجراگر
-│
-├── config.txt                  ← لینک vless://
-├── setup.bat                   ← نصب اولیه
-├── README.md                   ← همین فایل
-└── README.html                 ← راهنمای شیک
-```
-
----
-
 ## ⚠️ نکات مهم
 
 - 🚫 این پوشه را در مسیر با **حروف فارسی** قرار ندهید
-- 🚫 پوشه‌های `core-64`، `core-32`، `config` و `scripts` را **حذف یا جابه‌جا نکنید**
 - 🛡️ اگر آنتی‌ویروس غیر از **Windows Defender** دارید، این پوشه را در **لیست سفید** آن اضافه کنید
 - 🌐 پس از اتصال، همه‌ی مرورگرها از پروکسی استفاده می‌کنند
 - 🔌 برای قطع، حتماً از **Disconnect v2ray** استفاده کنید
